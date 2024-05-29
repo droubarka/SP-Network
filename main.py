@@ -14,3 +14,22 @@ def schedule_key(key: int, rounds: int) -> list[int]:
 		)
 
 	return scheduled_keys
+
+
+def substitute(block: int) -> int:
+	pass
+
+def permute(block: int) -> int:
+	pass
+
+def encrypt_block(block: int, key: int) -> int:
+	pass
+
+def decrypt_block(block: int, key: int) -> int:
+	pass
+
+def encrypt_file(input_file: str, output_file: str, key: int) -> int:
+	pass
+
+def decrypt_file(input_file: str, output_file: str, key: int) -> int:
+	pass
