@@ -29,7 +29,14 @@ def decrypt_block(block: int, key: int) -> int:
 	pass
 
 def encrypt_file(input_file: str, output_file: str, key: int) -> int:
+	with open(input_file, 'rb') as file:
+		plaintext = file.read()
+
+	#? Ensure plaintext length is a multiple of 16 bytes (128 bits)
+	plaintext += b'\x00' * (-len(plaintext) % 16)
+
 	pass
+
 
 def decrypt_file(input_file: str, output_file: str, key: int) -> int:
 	pass
