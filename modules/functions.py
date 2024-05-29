@@ -3,7 +3,7 @@
 def schedule_key(key: int, rounds: int) -> list[int]:
 	pass
 
-def substitute(block: int) -> int:
+def substitute(block: bytes, table: list, reverse: bool = False) -> bytes:
 	pass
 
 def permute(block: int) -> int:
