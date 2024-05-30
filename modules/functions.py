@@ -1,23 +1,28 @@
 # /modules/functions.py
 
-def schedule_key(key: int, rounds: int) -> list[int]:
-	pass
 
-def substitute(block: bytes, table: list, reverse: bool = False) -> bytes:
-	pass
+def bytes_to_bits(bytes: bytes) -> str:
+	"""
+	Convert a sequence of bytes to a string of bits.
 
-def permute(block: int) -> int:
-	pass
+	Args:
+		bytes: A sequence of bytes to be converted to bits.
 
-def encrypt_block(block: int, key: int) -> int:
-	pass
+	Returns:
+		A string of bits, where each byte is represented as 8 binary digits.
+	"""
+	return ''.join(format(byte, '08b') for byte in bytes)
 
-def decrypt_block(block: int, key: int) -> int:
-	pass
 
-def encrypt_file(input_file: str, output_file: str, key: int) -> int:
-	pass
+def bits_to_bytes(bits: str) -> bytes:
+	"""
+	Convert a string representing bits to bytes.
 
-def decrypt_file(input_file: str, output_file: str, key: int) -> int:
-	pass
+	Args:
+		bits: A string representing bits.
 
+	Returns:
+		A bytes object representing the converted bits.
+	"""
+
+	return int(bits, 2).to_bytes((len(bits) + 7) // 8, byteorder='big')
