@@ -1,6 +1,6 @@
 # /modules/spnetwork.py
 
-from . import functions
+import functions
 
 def substitute(block: bytes, table: list, reverse: bool = False) -> bytes:
 	"""
