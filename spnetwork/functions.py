@@ -12,6 +12,7 @@ def bytes_to_bits(bytes: bytes) -> str:
 	"""
 	return ''.join(format(byte, '08b') for byte in bytes)
 
+
 def bits_to_bytes(bits: str) -> bytes:
 	"""
 	Convert a string representing bits to bytes.
