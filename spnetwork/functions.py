@@ -1,4 +1,4 @@
-# /modules/functions.py
+# /spnetwork/functions.py
 
 def bytes_to_bits(bytes: bytes) -> str:
 	"""
