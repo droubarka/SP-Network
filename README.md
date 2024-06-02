@@ -1,5 +1,7 @@
 # Substitution-Permutation Network (SP-Network)
 
+[![Static Badge](https://img.shields.io/badge/Status-In%20Development-blue)]()
+
 <div align="center">
 	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/SubstitutionPermutationNetwork2.png/360px-SubstitutionPermutationNetwork2.png" />
 	<p>"A sketch of a SP-Network with 3 rounds."</p>
