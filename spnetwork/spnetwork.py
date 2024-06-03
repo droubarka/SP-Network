@@ -15,10 +15,10 @@ def substitute(block: bytes, table: bytes, reverse: bool = False) -> bytes:
 		A block of bytes resulting from the substitution.
 	"""
 	if not isinstance(block, bytes):
-		raise ValueError("block argument must be a bytes object")
+		raise TypeError("block argument must be a bytes object")
 
 	if not isinstance(table, bytes):
-		raise ValueError("table argument must be a bytes object")
+		raise TypeError("table argument must be a bytes object")
 
 	if len(set(table)) != len(table):
 		raise ValueError("Each byte in the block must have a unique substitution in the table")
@@ -44,10 +44,10 @@ def permute_bits(block: bytes, table: bytes, reverse: bool = False) -> bytes:
 		A block of bytes resulting from the permutation.
 	"""
 	if not isinstance(block, bytes):
-		raise ValueError("block argument must be a bytes object")
+		raise TypeError("block argument must be a bytes object")
 
 	if not isinstance(table, bytes):
-		raise ValueError("table argument must be a bytes object")
+		raise TypeError("table argument must be a bytes object")
 
 	if len(set(table)) != len(table):
 		raise ValueError("Each bit in the block must have a unique permutation in the table")
