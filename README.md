@@ -10,7 +10,7 @@
 ## Cloning
 
 ```shell
-git clone https://github.com/droubarka/SP-Network.git
+git clone https://github.com/droubarka/sp-network.git
 ```
 
 ## Install
